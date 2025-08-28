@@ -1,0 +1,21 @@
+# Core Web Scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml>=4.9.0  # Better HTML parser for BeautifulSoup
+
+# FastAPI Backend
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+
+# LLM Integration (OpenAI)
+openai==1.30.0
+
+# Testing
+pytest==8.1.1
+
+# Utilities
+pydantic>=2.0.0     # Validation models for FastAPI
+python-dotenv==1.0.1  # For environment variables (API keys)
+
+# Note: Additional packages (pandas, numpy, reportlab, streamlit) will be installed later
+# after setting up the core functionality

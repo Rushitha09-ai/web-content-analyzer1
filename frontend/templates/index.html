@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Content Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Content Analyzer</h1>
+        
+        <!-- Single URL Analysis Form -->
+        <div class="analysis-form">
+            <h2>Analyze Single URL</h2>
+            <form id="singleUrlForm">
+                <input type="url" id="url" name="url" placeholder="Enter URL to analyze" required>
+                <button type="submit">Analyze</button>
+            </form>
+        </div>
+
+        <!-- Batch Analysis Form -->
+        <div class="analysis-form">
+            <h2>Batch URL Analysis</h2>
+            <form id="batchUrlForm">
+                <textarea id="urls" name="urls" placeholder="Enter URLs (one per line)" required></textarea>
+                <button type="submit">Analyze All</button>
+            </form>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="results-section">
+            <h2>Analysis Results</h2>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
