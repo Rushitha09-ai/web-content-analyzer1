@@ -1,0 +1,2 @@
+python-3.11.0
+web: gunicorn frontend.app:app -k uvicorn.workers.UvicornWorker
